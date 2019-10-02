@@ -1,1 +1,36 @@
+div.one
+{
+    background-color:#FDDFDF;
+}
 
+div.two
+{
+    background-color:#FCF7DE;
+}
+
+div.three
+{
+    background-color:#DEFDE0;
+}
+
+div.four
+{
+    background-color:#DEF3FD;
+}
+
+div.five
+{
+    background-color:#F0DEFD;
+}
+
+div
+{
+    font-size:18px;
+    padding:10px;
+}
+
+header
+{
+    font-size:24px;
+    font-weight: bold;
+}

@@ -1,1 +1,65 @@
-
+<html>
+    <head>
+    <link href ="style.css" type="text/css" rel="stylesheet">
+    </head>
+<body>
+    <header>Data Transformation</header>
+<div class="one">
+    <h1> A1 </h1>
+    <pre>
+    var getGrade = function(quiz)
+ {
+    return quiz.grade;
+ }
+    </pre>
+    <p>This function returns the values for the grade attribute.</p>
+</div>
+    
+<div class="two">
+    <h1> A2 </h1>
+    <pre>
+    d3.mean(classroom[0].quizes, getGrade)
+    </pre>
+    <p>This calculates the mean of the quiz grades for th first penguin. It uses the function getGrade, and specifies that it should pull the grades from the objects in the quizes array for the first penguin. </p>
+</div>
+    
+<div class="three">
+    <h1>A3</h1>
+    <pre>
+    var Mean =function(penguin)
+{
+    return d3.mean(penguin.quizes, getGrade)
+}
+    </pre>
+    <p>This function returns the average quiz grade for a given penguin. It combines A1 and A2 to yeild a genrealized mean function.</p>
+</div>
+    
+<div class="four">
+    <h1> A4 </h1>
+    <pre>
+    classroom.map(Mean)
+    </pre>
+    <p>This calls the mean function for every element (penguin) in the classroom array and puts it into a new array.</p>
+</div>
+    
+<div class="five">
+    <h1>A5</h1>
+    <pre>
+    d3.mean(classroom.map(Mean))
+    </pre>
+    <p>This calls all the values from the array created in step A4. It then calculates the mean of all of those values.</p>
+</div>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
